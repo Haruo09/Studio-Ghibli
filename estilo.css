@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wix+Madefor+Display:wght@400..800&display=swap');
+
 body{
+    font-family: 'Open Sans', sans-serif;
+    font-color: var(--font-color);
     background-color: var(--fundo);
     margin: 0;
     display: grid;
@@ -12,31 +16,36 @@ body{
 header {
     background-color: var(--header);
     text-align: center;
+    height: 10vh;
     grid-area: header;
+    box-shadow: 0px 5px 5px #00000047;
 }
 
 header img {
-    height: 6em;
+    /* width: 80%; */
+    height: 100%;
 }
 
 main {
-    background-color: white;
+    background-color: var(--main);
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 15px;
     padding: 20px;
     grid-area: main;
     display: flex;
 
-    box-shadow: 0px 0px 5px 5px #00000015;
+    box-shadow: 0px 10px 5px 5px #00000047;
 }
 
 article {
     max-width: 1000px;
+    line-height: 1.7;
 }
 
-main h1 {
+article h1 {
     margin: 0;
+
 }
 
 #filmes {
@@ -62,4 +71,37 @@ section {
 section img {
     width: 300px;
     border-radius: 0px 15px 0px 0px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.informacoes-adicionais table {
+    margin-top: 5px;
+    font-size: .8em;
+    padding: 5px;
+}
+
+.informacoes-adicionais table * {
+    text-align: left;
+}
+
+.informacoes-adicionais table {
+    table-layout: 33% 66%;
+}
+
+.informacoes-adicionais table td {
+    margin-left: 5px;
+}
+
+.informacoes-adicionais p {
+    text-align: center;
+    font-size: .8em;
+    margin: 0;
+}
+
+.informacoes-adicionais table tr ul{
+    padding-left: 0;
+    list-style: none;
 }
