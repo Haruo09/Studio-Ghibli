@@ -1,0 +1,9 @@
+@import url('../../estilo.css');
+
+:root{
+    --header: #5dafc0;
+    --fundo: #5c7c77;
+    --main: #ffffff;
+    --font-color: #030203;
+}
+

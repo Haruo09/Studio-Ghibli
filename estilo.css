@@ -1,16 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wix+Madefor+Display:wght@400..800&display=swap');
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
+    /* min-height: 100vh; */
     font-family: 'Open Sans', sans-serif;
-    font-color: var(--font-color);
+    font-size: 1em;
+    color: var(--font-color);
+    background-image: var(--bg-img);
     background-color: var(--fundo);
+    background-blend-mode: overlay;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
     margin: 0;
     display: grid;
     grid-template-areas: 
-        'header header header'
-        'nav main none'
-        'footer footer footer'
+    'header header header'
+    'nav main none'
+    'footer footer footer'
     ;
+}
+
+main, nav, footer {
+    animation: appear .5s linear;
 }
 
 header {
@@ -26,14 +52,57 @@ header img {
     height: 100%;
 }
 
+nav {
+    width: 75%;
+    min-width: fit-content;
+    /* height: 100%; */
+    margin: 20px auto;
+    /* margin-left: 15px;
+    margin-bottom: 0px; */
+    border-radius: 15px;
+    padding: 30px;
+    z-index: 1;
+    background-color: var(--main);
+    box-shadow: 5px 5px 5px 0px #00000047;
+}
+
+nav h2 {
+    margin-top: 0;
+    margin-bottom: 5px2;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+nav ul {
+    margin: 0;
+    padding-left: 10px;
+}
+
+nav a {
+    /* font-size: 1.5em; */
+    text-decoration: none;
+    color: black;
+    /* line-height: 2.5; */
+    padding: .5em;
+    display: block;
+    width: 100%;
+    transition-duration: 200ms;
+    text-wrap: nowrap;
+}
+
+nav a:hover {
+    background-color: rgb(198, 198, 198);
+}
+
 main {
     background-color: var(--main);
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto;
+    /* margin-left: 0; */
     border-radius: 15px;
     padding: 20px;
     grid-area: main;
     display: flex;
+    text-align: justify;
 
     box-shadow: 0px 10px 5px 5px #00000047;
 }
@@ -45,20 +114,32 @@ article {
 
 article h1 {
     margin: 0;
-
 }
 
 #filmes {
+    margin: 10px 0;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px 10px;
     text-align: center;
-    margin: 0 auto;
-    gap: 15px;
+}
+
+#filmes a {
+    text-decoration: none;
+    color: var(--font-color);
+    transition-duration: 200ms;
+    position: static;
+}
+
+#filmes a:hover {
+    /* margin: -8px; */
+    scale: 1.05;
 }
 
 #filmes img {
-    height: 400px;
-    width: 283.13px;
+    min-width: 300px;
+    height: 424px;
+    width: 90%;
 }
 
 section {
@@ -74,34 +155,75 @@ section img {
 }
 
 ul li {
+    list-style-position: inside;
     list-style-type: none;
 }
 
 .informacoes-adicionais table {
-    margin-top: 5px;
-    font-size: .8em;
-    padding: 5px;
+    table-layout: auto;
+    padding: 7px;
+    font-size: .75em;
+    text-align: left;
+    gap: 15px;
+    border-spacing: 10px;
 }
 
 .informacoes-adicionais table * {
-    text-align: left;
+    vertical-align: top;
+    line-height: 1.8;
 }
 
-.informacoes-adicionais table {
-    table-layout: 33% 66%;
+.informacoes-adicionais table td ul {
+    padding-left: 0;
+    align-items: start;
+    vertical-align: top;
+    margin-top: 0; /* Pode ser necessário ajustar a margem superior, se houver */
 }
-
-.informacoes-adicionais table td {
-    margin-left: 5px;
-}
-
-.informacoes-adicionais p {
+    
+.informacoes-adicionais figcaption {
     text-align: center;
     font-size: .8em;
     margin: 0;
 }
+    
+footer {
+    grid-area: footer;
+    color: white;
+    max-width: 1000px;
+    margin: 10px auto;
+}
 
-.informacoes-adicionais table tr ul{
+footer ul {
+    list-style-type: disc;
     padding-left: 0;
-    list-style: none;
+}
+
+/* Estilos referentes às galerias de fotos, contidas nas páginas dos filmes */
+.galeria {
+    display: grid;
+    /* width: 100%; */
+    grid-template-columns: auto auto;
+    gap: 15px;
+}
+
+.galeria .img-wrapper {
+    /* padding: 10px; */
+    transition-duration: 200ms;
+    /* height: fit-content; */
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.galeria .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 200ms;
+}
+
+.galeria .img-wrapper img:hover {
+    transform: scale(1.1);
+}
+.galeria .img-wrapper img {
+    width: 100%;
 }

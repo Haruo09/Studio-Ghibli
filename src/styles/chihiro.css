@@ -1,0 +1,12 @@
+@import url('../../estilo.css');
+
+:root {
+    --header: #9e2323;
+    --fundo: #000000;
+    --main: #ffffff;
+    --font-color: #030203;
+}
+
+/* section.informacoes-adicionais th {
+    display: flex;
+} */

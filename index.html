@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina1</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <title>Studio Ghibli</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 <body>
-
     <header>
-        <img src="./images/pngwing.com.png" alt="">
+        <a href="./index.html">
+            <img src="./src/images/outros/logo.png" alt="">
+        </a>
     </header>
+    <nav>
+        <h2>Filmes</h2>
+        <ul>
+            <li><a href="./src/filmes/Grave-of-the-Fireflies/fireflies-grave.html">Túmulo dos Vagalumes</a></li>
+            <li><a href="./src/filmes/Howls-Moving-Castle/howls-moving-castle.html">O Castelo Animado</a></li>
+            <li><a href="./src/filmes/Nausicaä/nausicaa.html">Nausicaä do Vale do Vento</a></li>
+            <li><a href="./src/filmes/Ponyo/ponyo.html">Ponyo</a></li>
+            <li><a href="./src/filmes/Spirited-Away/chihiro.html">A Viagem de Chihiro</a></li>
+            <li><a href="./src/filmes/Totoro/totoro.html">Meu Amigo Totoro</a></li>
+        </ul>
+    </nav>
     <main>
         <article>
             <h1>STUDIO GHIBLI</h1>
             <p>
-                Studio Ghibli, Inc. (株式会社スタジオジブリ Kabushiki gaisha Sutajio Jiburi?) é um estúdio de animação japonês baseado em Koganei, Tóquio.Tem forte presença na indústria de animação e ampliou seu portfólio para incluir diversos formatos de mídia, como curtas-metragens, comerciais de televisão e dois filmes para televisão. Seu trabalho foi bem recebido pelo público e reconhecido com inúmeros prêmios. Seu mascote e símbolo mais reconhecível, o personagem Totoro, é um espírito gigante inspirado em cães-guaxinim (tanuki) e gatos do filme de 1988 Tonari no Totoro. Entre os filmes de maior bilheteria do estúdio estão Sen to Chihiro no Kamikakushi (2001), Hauru no Ugoku Shiro (2004) e Gake no ue no Ponyo (2008). O Studio Ghibli foi fundado em 15 de junho de 1985, pelos diretores Hayao Miyazaki e Isao Takahata e pelo produtor Toshio Suzuki, após adquirir os ativos da Topcraft. O estúdio também colaborou com estúdios de videogame no desenvolvimento visual de diversos jogos.
+                Studio Ghibli, Inc. <strong>(株式会社スタジオジブリ Kabushiki gaisha Sutajio Jiburi?)</strong> é um estúdio de animação japonês baseado em Koganei, Tóquio.Tem forte presença na indústria de animação e ampliou seu portfólio para incluir diversos formatos de mídia, como curtas-metragens, comerciais de televisão e dois filmes para televisão. Seu trabalho foi bem recebido pelo público e reconhecido com inúmeros prêmios. Seu mascote e símbolo mais reconhecível, o personagem Totoro, é um espírito gigante inspirado em cães-guaxinim (tanuki) e gatos do filme de 1988 Tonari no Totoro. Entre os filmes de maior bilheteria do estúdio estão Sen to Chihiro no Kamikakushi (2001), Hauru no Ugoku Shiro (2004) e Gake no ue no Ponyo (2008). O Studio Ghibli foi fundado em 15 de junho de 1985, pelos diretores Hayao Miyazaki e Isao Takahata e pelo produtor Toshio Suzuki, após adquirir os ativos da Topcraft. O estúdio também colaborou com estúdios de videogame no desenvolvimento visual de diversos jogos.
             </p>
             <p>
                 Cinco dos filmes do estúdio estão entre os dez longas-metragens de anime de maior bilheteria feitos no Japão. Sen to Chihiro no Kamikakushi está em segundo lugar, arrecadando 31,68 bilhões de ienes, e Mononoke Hime está em quarto lugar, arrecadando 20,18 bilhões de ienes. Três de seus filmes ganharam o prêmio Animage Grand Prix, quatro ganharam o Prêmio da Academia Japonesa de Animação do Ano e cinco receberam indicações ao Oscar. Sen to Chihiro no Kamikakushi ganhou o Urso de Ouro de 2002 e o Oscar de Melhor Filme de Animação de 2003. 
@@ -25,40 +37,43 @@
             </p>
 
             <div id="filmes">
-                <div class="filme" id="1">
-                    <img src="./images/filmes/Grave-of-the-Fireflies.jpg" alt="">
-                    <p>Túmulo dos Vagalumes</p>
-                </div>
-                <div class="filme" id="2">
-                    <img src="./images/filmes/Howls-Moving-Castle.jpeg" alt="">
-                    <p>O Castelo Animado</p>
-                    
-                </div>
-                <div class="filme" id="3">
-                    <img src="./images/filmes/Nausicaä.jpg" alt="">
-                    <p>Nausicaä do Vale do Vento</p>
-                    
-                </div>
-                <div class="filme" id="4">
-                    <img src="./images/filmes/Ponyo.jpeg" alt="">
-                    <p>Ponyo</p>
-                    
-                </div>
-                <div class="filme" id="5">
-                    <img src="./images/filmes/Spirited-Away.jpg" alt="">
-                    <p>A Viagem de Chihiro</p>
-                    
-                </div>
-                <div class="filme" id="6">
-                    <img src="./images/filmes/Totoro.jpeg" alt="">
-                    <p>Meu Amigo Totoro</p>
-                </div>
+
+                <a href="./src/filmes/Grave-of-the-Fireflies/fireflies-grave.html" class="filme" id="1">
+                    <img src="./src/filmes/Grave-of-the-Fireflies/cartaz.jpg" alt="">
+                    <figcaption>Túmulo dos Vagalumes</figcaption>
+                </a>
+                
+                <a href="./src/filmes/Howls-Moving-Castle/howls-moving-castle.html" class="filme" id="2">
+                    <img src="./src/filmes/Howls-Moving-Castle/cartaz.jpeg" alt="">
+                    <figcaption>O Castelo Animado</figcaption>
+                </a>
+                
+                <a href="./src/filmes/Nausicaä/nausicaa.html" class="filme" id="3">
+                    <img src="./src/filmes/Nausicaä/cartaz.jpg" alt="">
+                    <figcaption>Nausicaä do Vale do Vento</figcaption>
+                </a>
+                
+                <a href="./src/filmes/Ponyo/ponyo.html" class="filme" id="4">
+                    <img src="./src/filmes/Ponyo/cartaz.jpeg" alt="">
+                    <figcaption>Ponyo</figcaption>
+                </a>
+                
+                <a href="./src/filmes/Spirited-Away/chihiro.html" class="filme" id="5">
+                    <img src="./src/filmes/Spirited-Away/cartaz.jpg" alt="">
+                    <figcaption>A Viagem de Chihiro</figcaption>
+                </a>
+                
+                <a href="./src/filmes/Totoro/totoro.html" class="filme" id="6">
+                    <img src="./src/filmes/Totoro/cartaz.jpeg" alt="">
+                    <figcaption>Meu Amigo Totoro</figcaption>
+                </a>
+                
             </div>
         </article>
         <section class="informacoes-adicionais">
-            <img src="./images/Studio_Ghibli_studio_3.jpg" alt="">
-            <p>sede em Koganei, Tóquio</p>
-            <table>
+            <img src="./src/images/outros/foto-studio.jpg" alt="">
+            <figcaption>sede em Koganei, Tóquio</figcaption>
+            <table cellpadding="3">
                 <tr>
                     <th>Nome nativo</th>   
                     <td>株式会社スタジオジブリ </td>
@@ -107,6 +122,12 @@
             </table>
         </section>
     </main>
-    
+    <footer>
+        <p>Este site foi criado por:</p>
+        <ul>
+            <li>Fábio Haruo de Freitas Nishioka</li>
+            <li>Maria Eduarda Pereira do Nascimento</li>
+        </ul>
+    </footer>
 </body>
 </html>
