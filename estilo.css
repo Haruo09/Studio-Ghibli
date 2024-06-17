@@ -104,7 +104,7 @@ main {
     display: flex;
     text-align: justify;
 
-    box-shadow: 0px 10px 5px 5px #00000047;
+    box-shadow: 0px 2px 5px 5px #00000047;
 }
 
 article {
@@ -114,6 +114,20 @@ article {
 
 article h1 {
     margin: 0;
+}
+
+article h2 {
+    margin-bottom: 0;
+    font-size: 1.4em;
+}
+
+article p {
+    margin-top: 2px;
+}
+
+main article ul {
+    list-style-type: disc;
+    /* list-style-position: inside; */
 }
 
 #filmes {
@@ -154,7 +168,8 @@ section img {
     border-radius: 0px 15px 0px 0px;
 }
 
-ul li {
+nav ul li,
+main .informacoes-adicionais li {
     list-style-position: inside;
     list-style-type: none;
 }
@@ -189,8 +204,16 @@ ul li {
 footer {
     grid-area: footer;
     color: white;
-    max-width: 1000px;
+    /* background-color: var(--footer); */
+    background-color: #00000047;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column; */
+    text-align: center;
     margin: 10px auto;
+    margin-bottom: 0;
 }
 
 footer ul {
